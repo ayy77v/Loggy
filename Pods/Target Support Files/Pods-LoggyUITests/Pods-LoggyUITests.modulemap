@@ -1,0 +1,6 @@
+framework module Pods_LoggyUITests {
+  umbrella header "Pods-LoggyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
