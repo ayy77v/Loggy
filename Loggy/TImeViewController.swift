@@ -7,34 +7,48 @@
 //
 
 import UIKit
+
 import Firebase
+
+import FirebaseAuth
 
 class TImeViewController: UIViewController {
     @IBOutlet weak var dateDuck: UIDatePicker!
     
+    var ref: DatabaseReference!
     
     @IBOutlet weak var labelLion: UILabel!
 
+    @IBOutlet weak var labelCat: UILabel!
+   
+    @IBOutlet weak var clickOn: UIButton!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseApp.configure()
-        var ref: DatabaseReference!
         ref = Database.database().reference()
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         labelLion.text = formatter.string(from: dateDuck.date)
+        
+        // test
+        let format = DateFormatter()
+        format.dateFormat = "dd"
+        labelCat.text = format.string(from: dateDuck.date)
 
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
-        labelLion.text = formatter.string(from: dateDuck.date)
+   
+        
+        
         // Dispose of any resources that can be recreated.
     }
+    
+ 
     
     
     @IBAction func dateChoose(_ sender: Any) {
@@ -42,8 +56,34 @@ class TImeViewController: UIViewController {
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         labelLion.text = formatter.string(from: dateDuck.date)
         
-        
+        let format = DateFormatter()
+        format.dateFormat = "dd"
+        labelCat.text = format.string(from: dateDuck.date)
     }
+    
+    @IBAction func storeData(_ sender: Any) {
+    //day
+        let format = DateFormatter()
+        format.dateFormat = "dd"
+        labelCat.text = format.string(from: dateDuck.date)
+        
+    //month
+        let formon = DateFormatter()
+        formon.dateFormat = "MM"
+        let mo = ""
+   
+        
+   // hour
+        
+        
+  //minute
+        
+        
+        let uid = Auth.auth().currentUser!.uid
+        
+        ref?.child("users").child(uid).setValue(labelCat.text)
+    }
+    
     
 
     /*

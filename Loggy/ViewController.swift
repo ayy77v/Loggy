@@ -8,9 +8,13 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
+
+var ref: DatabaseReference!
 
 class ViewController: UIViewController {
     @IBOutlet weak var signInSelector: UISegmentedControl!
+    var ref: DatabaseReference!
 
     
     @IBOutlet weak var signInLabel: UILabel!
@@ -28,6 +32,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -61,6 +66,7 @@ class ViewController: UIViewController {
                 if let u = user {
                     self.performSegue(withIdentifier: "goToHome", sender: self)
                     
+                    
                 }
                 else {
                     
@@ -72,6 +78,12 @@ class ViewController: UIViewController {
                 
                 if let u = user {
                      self.performSegue(withIdentifier: "goToHome", sender: self)
+                    
+                 
+                    
+                    
+            
+                    
                 }
                 else {
                     

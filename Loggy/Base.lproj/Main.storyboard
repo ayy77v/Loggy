@@ -126,8 +126,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGo-5E-YF4">
-                                <rect key="frame" x="0.0" y="121" width="375" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGo-5E-YF4">
+                                <rect key="frame" x="0.0" y="100" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="526136654.00942701">
                                     <!--2017-09-03 13:04:14 +0000-->
                                 </date>
@@ -135,8 +135,24 @@
                                     <action selector="dateChoose:" destination="aQe-vG-J70" eventType="valueChanged" id="WQB-xD-T9x"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-4l-IIi">
-                                <rect key="frame" x="16" y="490" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-4l-IIi">
+                                <rect key="frame" x="16" y="466" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfl-MH-97E">
+                                <rect key="frame" x="164" y="564" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dateChoose:" destination="aQe-vG-J70" eventType="touchUpInside" id="8Vi-jj-3s4"/>
+                                    <action selector="storeData:" destination="aQe-vG-J70" eventType="touchUpInside" id="Wto-DC-fyN"/>
+                                    <segue destination="Vxo-9F-WA9" kind="show" id="N2C-QO-lmC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzM-3e-qM6">
+                                <rect key="frame" x="166" y="517" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -144,20 +160,45 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99917775499999995" green="0.44504114830000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gGo-5E-YF4" secondAttribute="trailing" id="BxW-lc-Ya7"/>
+                            <constraint firstItem="gGo-5E-YF4" firstAttribute="top" secondItem="1jo-Q1-Eob" secondAttribute="bottom" constant="80" id="PSs-gt-0Ct"/>
                             <constraint firstItem="SL7-4l-IIi" firstAttribute="leading" secondItem="puS-fR-6sd" secondAttribute="leadingMargin" id="Rvg-5K-swF"/>
+                            <constraint firstItem="ZzM-3e-qM6" firstAttribute="top" secondItem="SL7-4l-IIi" secondAttribute="bottom" constant="30" id="YEQ-di-NS9"/>
                             <constraint firstItem="SL7-4l-IIi" firstAttribute="top" secondItem="gGo-5E-YF4" secondAttribute="bottom" constant="150" id="aDn-gD-OC8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SL7-4l-IIi" secondAttribute="trailing" id="ka7-u5-Ikf"/>
                             <constraint firstItem="SL7-4l-IIi" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="r1l-w1-RiK"/>
+                            <constraint firstItem="gGo-5E-YF4" firstAttribute="leading" secondItem="puS-fR-6sd" secondAttribute="leading" id="rpH-eQ-gXk"/>
+                            <constraint firstItem="ZzM-3e-qM6" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="ypT-5w-SRV"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clickOn" destination="xfl-MH-97E" id="5u0-zu-Bt4"/>
                         <outlet property="dateDuck" destination="gGo-5E-YF4" id="5UY-EM-Pdo"/>
-                        <outlet property="labelLion" destination="SL7-4l-IIi" id="z2B-z4-EbO"/>
+                        <outlet property="labelCat" destination="ZzM-3e-qM6" id="qBz-fo-YLQ"/>
+                        <outlet property="labelLion" destination="SL7-4l-IIi" id="cVP-vf-m2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDs-LH-D2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="145"/>
+            <point key="canvasLocation" x="2109.5999999999999" y="100.29985007496252"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="9Nu-Bi-vt5">
+            <objects>
+                <viewController id="Vxo-9F-WA9" customClass="ListViewController" customModule="Loggy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGV-37-nRS"/>
+                        <viewControllerLayoutGuide type="bottom" id="pBZ-Vd-fpB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YpO-6C-Iby">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hD-tt-UCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="116"/>
         </scene>
     </scenes>
 </document>
