@@ -17,8 +17,7 @@ class TImeViewController: UIViewController {
     //declare UI variable
     @IBOutlet weak var dateDuck: UIDatePicker!
     
-   
-    
+    @IBOutlet weak var dateFox: UIDatePicker!
 
    
     @IBOutlet weak var clickOn: UIButton!
@@ -34,8 +33,6 @@ class TImeViewController: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
 
         
         // test
@@ -65,7 +62,21 @@ class TImeViewController: UIViewController {
 
     }
     
+   
+    
+    @IBAction func dateJr(_ sender: Any) {
+        let zformatter = DateFormatter()
+        zformatter.dateFormat = "yyyy-MM-dd HH:mm"
+    }
+    
+    
+    
+    
+    
     @IBAction func storeData(_ sender: Any) {
+    
+    //first datepicker
+    
     //day
         let format = DateFormatter()
         format.dateFormat = "dd"
@@ -94,18 +105,66 @@ class TImeViewController: UIViewController {
         var mn = ""
         mn = formmin.string(from: dateDuck.date)
         
- // create the array to store
-        
-       var listty = [
-        "month": mo,
-        "day": daying,
-        "hour": hr,
-        "minute": mn
         
         
+// second datepicker
+        
+        //month
+        let formonkey = DateFormatter()
+        formonkey.dateFormat = "MM"
+        var monkey = ""
+        monkey = formmin.string(from: dateFox.date)
         
         
         
+        //day
+        
+        let  formduck = DateFormatter()
+        formduck.dateFormat = "dd"
+        var duck = ""
+        duck =  formduck.string(from: dateFox.date)
+        
+        
+        
+        //hour
+        
+        let formhorse = DateFormatter()
+        formhorse.dateFormat = "HH"
+        var horse = ""
+        horse = formhorse.string(from: dateFox.date)
+
+        
+        
+        
+        //minute
+        
+        let formmouse = DateFormatter()
+        formmouse.dateFormat = "mm"
+        var mouse = ""
+        mouse = formmouse.string(from: dateFox.date)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ // create the array to store in firebase
+        
+       let listty = [
+        "monthAlpha": mo,
+        "dayAlpha": daying,
+        "hourAlpha": hr,
+        "minuteAlpha": mn,
+        "monthBeta": monkey,
+        "dayBeta": duck,
+        "hourBeta": horse,
+        "minuteBeta": mouse
         ]
         
         
@@ -114,7 +173,7 @@ class TImeViewController: UIViewController {
 // store date to firebase
         let uid = Auth.auth().currentUser!.uid
         
-        ref?.child("users").child(uid).setValue(listty)
+        ref?.child("users").child(uid).childByAutoId().setValue(listty)
     }
     
     

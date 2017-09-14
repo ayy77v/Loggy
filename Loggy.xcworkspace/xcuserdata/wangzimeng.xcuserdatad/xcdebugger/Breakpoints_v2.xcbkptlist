@@ -20,13 +20,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Loggy/TImeViewController.swift"
-            timestampString = "526624374.859181"
+            timestampString = "527092737.23118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "storeData(_:)"
-            landmarkType = "7">
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "TImeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -36,13 +36,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Loggy/TImeViewController.swift"
-            timestampString = "526624374.859181"
+            timestampString = "527092737.23118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "storeData(_:)"
-            landmarkType = "7">
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "TImeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Loggy/TImeViewController.swift"
-            timestampString = "526624374.859181"
+            timestampString = "527092737.23118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "storeData(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -84,13 +84,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Loggy/TImeViewController.swift"
-            timestampString = "526624374.859181"
+            timestampString = "527092737.23118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "storeData(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Loggy/TImeViewController.swift"
+            timestampString = "527092487.572087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "TImeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loggy.TImeViewController.dateDuck.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIDatePicker&gt;"
+                  moduleName = "Loggy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzimeng/Desktop/Loggy/Loggy/TImeViewController.swift"
+                  timestampString = "527092737.391034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loggy.TImeViewController.dateDuck.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIDatePicker&gt;"
+                  moduleName = "Loggy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzimeng/Desktop/Loggy/Loggy/TImeViewController.swift"
+                  timestampString = "527092737.393759"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loggy.TImeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Loggy.TImeViewController"
+                  moduleName = "Loggy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzimeng/Desktop/Loggy/Loggy/TImeViewController.swift"
+                  timestampString = "527092737.396529"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loggy.TImeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Loggy.TImeViewController&gt;"
+                  moduleName = "Loggy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzimeng/Desktop/Loggy/Loggy/TImeViewController.swift"
+                  timestampString = "527092737.398818"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

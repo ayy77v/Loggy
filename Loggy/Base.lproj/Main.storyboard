@@ -126,23 +126,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkj-dh-gPt">
-                                <rect key="frame" x="166" y="28" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkj-dh-gPt">
+                                <rect key="frame" x="168" y="35" width="39.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx4-Ac-wPm">
-                                <rect key="frame" x="166" y="310" width="42" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx4-Ac-wPm">
+                                <rect key="frame" x="177.5" y="307" width="19" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGo-5E-YF4">
-                                <rect key="frame" x="0.0" y="70" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGo-5E-YF4">
+                                <rect key="frame" x="16" y="66" width="343" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="526136654.00942701">
                                     <!--2017-09-03 13:04:14 +0000-->
                                 </date>
@@ -150,16 +147,14 @@
                                     <action selector="dateChoose:" destination="aQe-vG-J70" eventType="valueChanged" id="WQB-xD-T9x"/>
                                 </connections>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TMm-S2-wVJ">
-                                <rect key="frame" x="0.0" y="340" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="526624168.00940901">
-                                    <!--2017-09-09 04:29:28 +0000-->
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-Ty-CXJ">
+                                <rect key="frame" x="16" y="347.5" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="526710808.28781301">
+                                    <!--2017-09-10 04:33:28 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfl-MH-97E">
-                                <rect key="frame" x="166" y="564" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfl-MH-97E">
+                                <rect key="frame" x="164.5" y="577.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="dateChoose:" destination="aQe-vG-J70" eventType="touchUpInside" id="8Vi-jj-3s4"/>
@@ -169,10 +164,27 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99917775499999995" green="0.44504114830000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Hx4-Ac-wPm" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="2mL-ke-1Ww"/>
+                            <constraint firstItem="qVE-Ty-CXJ" firstAttribute="leading" secondItem="puS-fR-6sd" secondAttribute="leadingMargin" id="5pe-Gf-zhF"/>
+                            <constraint firstItem="Kkj-dh-gPt" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="9Ag-It-EwX"/>
+                            <constraint firstItem="xfl-MH-97E" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="DGT-ln-8c6"/>
+                            <constraint firstItem="xfl-MH-97E" firstAttribute="top" secondItem="qVE-Ty-CXJ" secondAttribute="bottom" constant="14" id="I3d-fA-CrK"/>
+                            <constraint firstItem="qVE-Ty-CXJ" firstAttribute="top" secondItem="Hx4-Ac-wPm" secondAttribute="bottom" constant="20" id="M5e-v1-8q9"/>
+                            <constraint firstItem="qVE-Ty-CXJ" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="NXF-hJ-gmm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gGo-5E-YF4" secondAttribute="trailing" id="OCM-HX-bBz"/>
+                            <constraint firstItem="gGo-5E-YF4" firstAttribute="top" secondItem="Kkj-dh-gPt" secondAttribute="bottom" constant="10" id="QIT-dZ-QyS"/>
+                            <constraint firstItem="gGo-5E-YF4" firstAttribute="centerX" secondItem="puS-fR-6sd" secondAttribute="centerX" id="bIS-6z-Sav"/>
+                            <constraint firstItem="Kkj-dh-gPt" firstAttribute="top" secondItem="1jo-Q1-Eob" secondAttribute="bottom" constant="15" id="pcz-qB-VaN"/>
+                            <constraint firstItem="gGo-5E-YF4" firstAttribute="leading" secondItem="puS-fR-6sd" secondAttribute="leadingMargin" id="raa-Mz-BBx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qVE-Ty-CXJ" secondAttribute="trailing" id="tSA-Nq-XxN"/>
+                            <constraint firstItem="Hx4-Ac-wPm" firstAttribute="top" secondItem="gGo-5E-YF4" secondAttribute="bottom" constant="25" id="vq2-mO-k6j"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="clickOn" destination="xfl-MH-97E" id="5u0-zu-Bt4"/>
                         <outlet property="dateDuck" destination="gGo-5E-YF4" id="5UY-EM-Pdo"/>
+                        <outlet property="dateFox" destination="qVE-Ty-CXJ" id="JDm-zj-nQU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDs-LH-D2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
