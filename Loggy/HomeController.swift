@@ -1,15 +1,24 @@
 //
-//  ListViewController.swift
+//  HomeController.swift
 //  Loggy
 //
-//  Created by 王資猛 on 2017/9/5.
+//  Created by 王資猛 on 2017/9/15.
 //  Copyright © 2017年 王資猛. All rights reserved.
 //
 
 import UIKit
 
-class ListViewController: UIViewController {
 
+
+
+class HomeController: UIViewController {
+
+    
+    @IBOutlet weak var dateOne: UITextField!
+    
+    
+    @IBOutlet weak var dateSecond: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +29,21 @@ class ListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+
+    @IBAction func firstKiss(_ sender: Any) {
+        
+           self.performSegue(withIdentifier: "dayOne", sender: self)
+    }
+   
+  
+    
+    @IBAction func secondKiss(_ sender: Any) {
+        
+           self.performSegue(withIdentifier: "dayTwo", sender: self)
+    }
+    
     
 
     /*

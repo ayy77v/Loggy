@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		100F385D9A3BBEBB6C8DA229 /* Pods_LoggyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBC02E9EBB9CB3FA6D9FCB /* Pods_LoggyTests.framework */; };
 		137AEADF78B6EB689B4D6101 /* Pods_Loggy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BB212919666A5ACDC710AB /* Pods_Loggy.framework */; };
+		4E0572FD1F6C0CE10086E572 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0572FC1F6C0CE10086E572 /* HomeController.swift */; };
+		4E0572FF1F6C109C0086E572 /* DayOneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0572FE1F6C109C0086E572 /* DayOneController.swift */; };
+		4E0573011F6C10B10086E572 /* DayTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0573001F6C10B10086E572 /* DayTwoController.swift */; };
 		4E1A32381F5453DF00C2F91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A32371F5453DF00C2F91A /* AppDelegate.swift */; };
 		4E1A323A1F5453DF00C2F91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A32391F5453DF00C2F91A /* ViewController.swift */; };
 		4E1A323D1F5453DF00C2F91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1A323B1F5453DF00C2F91A /* Main.storyboard */; };
@@ -17,8 +20,6 @@
 		4E1A324D1F5453DF00C2F91A /* LoggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A324C1F5453DF00C2F91A /* LoggyTests.swift */; };
 		4E1A32581F5453DF00C2F91A /* LoggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A32571F5453DF00C2F91A /* LoggyUITests.swift */; };
 		4E74AFCA1F555BFD0086FA0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E74AFC91F555BFD0086FA0A /* GoogleService-Info.plist */; };
-		4E76A4D01F5C368300A179A1 /* TImeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76A4CF1F5C368300A179A1 /* TImeViewController.swift */; };
-		4EB227E11F5ED7E2004829DA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB227E01F5ED7E2004829DA /* ListViewController.swift */; };
 		E5F70105F0329E02F4B3D7FB /* Pods_LoggyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C412ECDBFD45546005A67897 /* Pods_LoggyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0572FC1F6C0CE10086E572 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		4E0572FE1F6C109C0086E572 /* DayOneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOneController.swift; sourceTree = "<group>"; };
+		4E0573001F6C10B10086E572 /* DayTwoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTwoController.swift; sourceTree = "<group>"; };
 		4E1A32341F5453DF00C2F91A /* Loggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1A32371F5453DF00C2F91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E1A32391F5453DF00C2F91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +58,6 @@
 		4E1A32571F5453DF00C2F91A /* LoggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggyUITests.swift; sourceTree = "<group>"; };
 		4E1A32591F5453DF00C2F91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E74AFC91F555BFD0086FA0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4E76A4CF1F5C368300A179A1 /* TImeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TImeViewController.swift; sourceTree = "<group>"; };
-		4EB227E01F5ED7E2004829DA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		52122DABF53126A064E55186 /* Pods-LoggyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoggyUITests/Pods-LoggyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6632A1AACABBFD60519DD2D6 /* Pods-LoggyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoggyUITests/Pods-LoggyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7805A1F4E98472555C699D7B /* Pods-LoggyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoggyTests/Pods-LoggyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,9 +124,10 @@
 			children = (
 				4E1A32371F5453DF00C2F91A /* AppDelegate.swift */,
 				4E1A32391F5453DF00C2F91A /* ViewController.swift */,
+				4E0572FC1F6C0CE10086E572 /* HomeController.swift */,
 				4E1A323B1F5453DF00C2F91A /* Main.storyboard */,
-				4EB227E01F5ED7E2004829DA /* ListViewController.swift */,
-				4E76A4CF1F5C368300A179A1 /* TImeViewController.swift */,
+				4E0572FE1F6C109C0086E572 /* DayOneController.swift */,
+				4E0573001F6C10B10086E572 /* DayTwoController.swift */,
 				4E1A323E1F5453DF00C2F91A /* Assets.xcassets */,
 				4E1A32401F5453DF00C2F91A /* LaunchScreen.storyboard */,
 				4E1A32431F5453DF00C2F91A /* Info.plist */,
@@ -475,9 +478,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E1A323A1F5453DF00C2F91A /* ViewController.swift in Sources */,
+				4E0572FF1F6C109C0086E572 /* DayOneController.swift in Sources */,
 				4E1A32381F5453DF00C2F91A /* AppDelegate.swift in Sources */,
-				4EB227E11F5ED7E2004829DA /* ListViewController.swift in Sources */,
-				4E76A4D01F5C368300A179A1 /* TImeViewController.swift in Sources */,
+				4E0572FD1F6C0CE10086E572 /* HomeController.swift in Sources */,
+				4E0573011F6C10B10086E572 /* DayTwoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
