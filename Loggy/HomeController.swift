@@ -19,8 +19,11 @@ class HomeController: UIViewController {
     
     @IBOutlet weak var dateSecond: UITextField!
     
+    var dvc:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         dateOne.text = dvc
 
         // Do any additional setup after loading the view.
     }
@@ -28,13 +31,17 @@ class HomeController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        dateOne.text = dvc
     }
     
     
 
     @IBAction func firstKiss(_ sender: Any) {
         
-           self.performSegue(withIdentifier: "dayOne", sender: self)
+       self.performSegue(withIdentifier: "dayOne", sender: self)
+        
+       
     }
    
   
@@ -45,6 +52,8 @@ class HomeController: UIViewController {
     }
     
     
+    
+
 
     /*
     // MARK: - Navigation

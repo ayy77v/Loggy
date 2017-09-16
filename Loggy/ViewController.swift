@@ -12,9 +12,13 @@ import Firebase
 
 var ref: DatabaseReference!
 
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var signInSelector: UISegmentedControl!
     var ref: DatabaseReference!
+    
+    
 
     
     @IBOutlet weak var signInLabel: UILabel!

@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JEZ-tq-QkA">
-                                <rect key="frame" x="16" y="204.5" width="343" height="258.5"/>
+                                <rect key="frame" x="16" y="204" width="343" height="259"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yAo-Se-h09">
                                         <rect key="frame" x="107" y="0.0" width="129" height="29"/>
@@ -36,13 +36,13 @@
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qx-XH-0Xx">
-                                        <rect key="frame" x="145.5" y="58" width="52" height="20.5"/>
+                                        <rect key="frame" x="146" y="58" width="52" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="j6j-P0-egG">
-                                        <rect key="frame" x="0.0" y="108.5" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="109" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17c-Ja-OPt">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
@@ -59,7 +59,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vsE-Rv-XwK">
-                                        <rect key="frame" x="0.0" y="168.5" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="169" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-mS-yFM">
                                                 <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
@@ -76,7 +76,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XI-s4-2xV">
-                                        <rect key="frame" x="148" y="228.5" width="47" height="30"/>
+                                        <rect key="frame" x="148" y="229" width="47" height="30"/>
                                         <color key="backgroundColor" red="0.99917775499839401" green="0.44504114827392405" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,7 +132,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hi" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvT-H6-9qc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvT-H6-9qc">
                                 <rect key="frame" x="116" y="141" width="143" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -259,22 +259,37 @@
                                 <date key="date" timeIntervalSinceReferenceDate="527176102.42278898">
                                     <!--2017-09-15 13:48:22 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="dateChoose:" destination="PzS-6z-rSL" eventType="valueChanged" id="sHy-Ri-dR0"/>
+                                </connections>
                             </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfS-R9-qOO">
+                                <rect key="frame" x="116" y="361" width="143" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eKH-nh-41E" firstAttribute="leading" secondItem="5Uf-CY-qwO" secondAttribute="leadingMargin" id="0os-DF-eTA"/>
                             <constraint firstItem="E5q-Mm-UYv" firstAttribute="centerX" secondItem="5Uf-CY-qwO" secondAttribute="centerX" id="3xx-8M-fKW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E5q-Mm-UYv" secondAttribute="trailing" constant="100" id="Bj9-ZV-doR"/>
+                            <constraint firstItem="lfS-R9-qOO" firstAttribute="leading" secondItem="5Uf-CY-qwO" secondAttribute="leadingMargin" constant="100" id="Cmb-4V-lUO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lfS-R9-qOO" secondAttribute="trailing" constant="100" id="FV5-Df-uFV"/>
                             <constraint firstItem="eKH-nh-41E" firstAttribute="top" secondItem="15k-yC-moi" secondAttribute="bottom" constant="75" id="Ige-Ru-GGq"/>
                             <constraint firstItem="E5q-Mm-UYv" firstAttribute="top" secondItem="eKH-nh-41E" secondAttribute="bottom" constant="200" id="Kb8-ok-4M4"/>
                             <constraint firstItem="E5q-Mm-UYv" firstAttribute="leading" secondItem="5Uf-CY-qwO" secondAttribute="leadingMargin" constant="100" id="PtG-7W-hAx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eKH-nh-41E" secondAttribute="trailing" id="d1r-l0-xeF"/>
                             <constraint firstItem="eKH-nh-41E" firstAttribute="centerX" secondItem="5Uf-CY-qwO" secondAttribute="centerX" id="hpd-c9-zxn"/>
+                            <constraint firstItem="lfS-R9-qOO" firstAttribute="top" secondItem="eKH-nh-41E" secondAttribute="bottom" constant="50" id="oH5-vB-2GV"/>
+                            <constraint firstItem="lfS-R9-qOO" firstAttribute="centerX" secondItem="5Uf-CY-qwO" secondAttribute="centerX" id="yMf-Of-Udx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="confirm" destination="E5q-Mm-UYv" id="dnI-wF-mOB"/>
+                        <outlet property="dateDuck" destination="eKH-nh-41E" id="sbg-ve-DF6"/>
+                        <outlet property="firstShow" destination="lfS-R9-qOO" id="X0E-2O-xF2"/>
                         <segue destination="16L-Jk-VOO" kind="show" identifier="firstPick" id="sFP-P1-CDv"/>
                     </connections>
                 </viewController>
@@ -284,6 +299,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sFP-P1-CDv"/>
+        <segue reference="UD0-Ol-HeT"/>
     </inferredMetricsTieBreakers>
 </document>
